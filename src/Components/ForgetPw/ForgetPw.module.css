@@ -1,0 +1,163 @@
+.dot{
+    position: fixed;
+    z-index:200;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+   padding-top: 20%;
+}
+.loader{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+.close {
+    color: black;
+    float: right;
+    margin-right: 1%;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+.overlay{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width:100%;
+	height: 100%;
+	background-color: rgba(4, 43, 57,0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.registerBtn{
+  background-color: rgba(4, 43, 57,1);
+  padding:5px 18px;
+  border-radius: 10px;  
+}
+.Signin{
+  position: absolute;
+  right: 10%;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: -1;
+}
+.signinTitle{
+  font-size: x-large;
+  font-weight: 700;
+}
+.loginbtn{
+  cursor: pointer;
+ width: fit-content;
+ padding: 8px 22px;
+ color: white;
+ border-radius: 8px;
+ font-size: 15px;
+ background-color: rgba(4, 43, 57,1) ;
+}
+.toast{
+  color: red;
+  
+}
+  .register{
+    float: right;
+    margin-right:5%;
+    margin-top: 1%;
+    display: flex;
+      justify-content: center;
+     align-items: center;
+      text-decoration: none;
+      color: black;
+  }
+  .close:hover,
+  .close:focus {
+    color: green;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .BottomImage{
+    position:absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  .sideImg{
+    position: absolute;
+    display: flex;
+    color:white;
+    
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background-color: teal;
+  }
+  .sideImgText{
+    position: absolute;
+    
+  }
+  .inputEmail{
+    width: 100%;
+    height:30px;
+  
+  }
+  .inputName{
+    margin-right: 11px;
+    width: 100%;
+    height: 30px;
+    flex: 6;
+    justify-content: space-evenly;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+.login{
+    background-color: white!important;
+    width: 62%;
+    height: 62%;
+    position: fixed;
+    z-index: 500;
+    bottom: 3%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+}
+.datePicker{
+  height: 40px;
+  width: 90%;
+  }
+@-webkit-keyframes slideIn {
+    from {bottom: -500px; opacity: 0} 
+    to {bottom: 3%; opacity: 1}
+  }
+
+  @keyframes slideIn {
+    from {bottom: -500px; opacity: 0}
+    to {bottom: 3%; opacity: 1}
+  }
+    
+@-webkit-keyframes mymove {
+    0%   {transform:scale(0.15)}
+    25%  {transform:scale(0.25)}
+    50%  {transform:scale(0.35)}
+    75%  {transform:scale(0.5)}
+    100% {transform:scale(0.25)}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {transform:scale(0.15)}
+    25%  {transform:scale(0.25)}
+    50%  {transform:scale(0.35)}
+    75%  {transform:scale(0.5)}
+    100% {transform:scale(0.25)}
+}

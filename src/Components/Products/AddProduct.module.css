@@ -1,0 +1,96 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.rightContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    margin-left: 300px;
+}
+.title{
+    font-size: 1.5em;
+    font-weight: 600;
+
+}
+.subTitle{
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.8);
+}
+.category{
+    margin-top: 50px;
+    width: 200px;
+   
+}
+.categoryImage{
+    margin-top: 50px;
+    width: 200px;
+  display: flex;
+  flex-direction: row;  
+}
+.individualRowCategory{
+    margin-left: 2%;
+}
+.inputBox{
+    width:200px;
+}
+.categoryField{
+    margin-top: 12px;
+    width: 200px;
+    }
+.rowCategory{
+    display: flex;
+    flex-direction: row;
+    margin-right:40%;
+}
+.rowCategoryTable{
+    display: flex;
+    flex-direction: row;
+    
+}
+.submitbtn{
+    background-color: teal;
+    color: white;
+    width: 5%;
+    border-radius: 5px;
+    padding: 12px;
+}
+.rowCategoryTable2{
+    display: flex;
+    flex-direction: row;
+    background-color: hsla(2,100%,100%,0.8);
+    padding: 12px;
+    margin-right: 10%;
+    margin-top: 1%;
+}
+.individualRow{
+    margin-right:40%;
+
+}
+.individualRowTable{
+    margin-right:40px;
+}
+.input{
+    margin-top: 12px;
+    width: 200px;
+    height: 30px;
+    border:1px solid gainsboro ;
+    border-radius: 5px;
+}
+.inputDesc{
+    
+    margin-top: 12px;
+    width: 50vw;
+    height: 200px;
+    border:1px solid gainsboro ;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 600px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+        
+    }
+}

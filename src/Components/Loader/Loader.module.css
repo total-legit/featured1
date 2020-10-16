@@ -1,0 +1,275 @@
+.dot{
+    position: fixed;
+    z-index:200;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+   padding-top: 20%;
+}
+.loader{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+.close {
+    color: black;
+    float: right;
+    margin-right: 1%;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+.overlay{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width:100%;
+	height: 100%;
+	background-color: rgba(4, 43, 57,0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.registerBtn{
+  background-color: rgba(4, 43, 57,1);
+  padding:5px 18px;
+  border-radius: 10px;  
+}
+.Signin{
+  position: absolute;
+  right: 10%;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: -1;
+}
+.signinTitle{
+  font-size: x-large;
+  font-weight: 700;
+}
+.loginbtn{
+ width: fit-content;
+ padding: 8px 22px;
+ color: white;
+ border-radius: 8px;
+ font-size: 15px;
+ background-color: rgba(4, 43, 57,1) ;
+}
+  .register{
+    float: right;
+    margin-right:5%;
+    margin-top: 1%;
+    display: flex;
+      justify-content: center;
+     align-items: center;
+      text-decoration: none;
+      color: black;
+  }
+  .close:hover,
+  .close:focus {
+    color: green;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .BottomImage{
+    position:absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  .sideImg{
+    position: absolute;
+    display: flex;
+    color:white;
+    
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background-color: teal;
+  }
+  .sideImgText{
+    position: absolute;
+    
+  }
+  .inputEmail{
+    width: 100%;
+    height:30px;
+  
+  }
+.login{
+    background-color: white!important;
+    width: 75%;
+    height: 75%;
+    position: fixed;
+    z-index: 500;
+    bottom: 13%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.6s;
+    animation-name: slideIn;
+    animation-duration: 0.6s;
+}
+.haveaccount{
+  margin-right:12px
+}
+.rememberme{
+  margin-top:40px;
+  font-size:12px;
+  display:flex;
+  flex-direction:row;
+
+}
+.loginwith{
+  margin-top:40px;
+  font: size 12px;
+}
+.facegoogle{
+  display: flex;
+  flex-direction:column;
+}
+
+@-webkit-keyframes slideIn {
+    from {bottom: -500px; opacity: 0} 
+    to {bottom: 13%; opacity: 1}
+  }
+
+  @keyframes slideIn {
+    from {bottom: -500px; opacity: 0}
+    to {bottom: 13%; opacity: 1}
+  }
+    
+@-webkit-keyframes mymove {
+    0%   {transform:scale(0.15)}
+    25%  {transform:scale(0.25)}
+    50%  {transform:scale(0.35)}
+    75%  {transform:scale(0.5)}
+    100% {transform:scale(0.25)}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {transform:scale(0.15)}
+    25%  {transform:scale(0.25)}
+    50%  {transform:scale(0.35)}
+    75%  {transform:scale(0.5)}
+    100% {transform:scale(0.25)}
+}
+@media only screen and (max-width: 600px) {
+      .login{
+        background-color: white!important;
+        width: 95%;
+        height: 75%;
+        position: fixed;
+        z-index: 500;
+        bottom: 13%;
+        -webkit-animation-name: slideIn;
+        -webkit-animation-duration: 0.6s;
+        animation-name: slideIn;
+        animation-duration: 0.6s;
+        margin-left:0.5%;
+    }
+    .sideImgText{
+      position:absolute;
+      width:100%;
+      margin-left: 0%;
+     text-align:center;
+    margin-left: 1%;
+    margin-right:1%;
+      
+    }
+    .BottomImage{
+      position:absolute;
+      bottom: 1%;
+      display: flex;
+      flex-direction: column;
+      width:100%;
+
+    }
+    .overlay{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      width:101%;
+      height: 101%;
+      background-color: rgba(4, 43, 57,0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .register{
+      float: center;
+      margin-top: 1%;
+      display: flex;
+      flex-direction:column;
+        justify-content: center;
+       align-items: center;
+        text-decoration: none;
+        color: black;
+        font-size:small;
+        height:10vh;
+        font-size:100%;
+        position:absolute;
+        margin-left:26%;
+
+    }
+    .registerBtn{
+      background-color: rgba(4, 43, 57,1);
+      padding:4% 5%;
+      border-radius: 10px;
+      margin-top:4%; 
+    }
+    .Signin{
+      position: absolute;
+      right: 7%;
+      width:90.3%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      z-index: -1;
+      margin-top:25.5%;
+      height:80%;
+    }
+    .signinTitle{
+      font-size: x-large;
+      font-weight: 700;
+      text-align: center;
+      margin-top:0%;
+    }
+    .haveaccount{
+      margin-right:0%;
+    }
+    .loginleft{
+      display:none
+    }
+    .loginright{
+      width:100%;
+      height:100%
+    }
+    .rememberme{
+      margin-top:2%  
+      }
+    
+    .loginwith{
+      margin-top:7%;
+      font-size :12px;
+      margin-right:3%;
+    }
+    .facegoogle{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+    }
+    .enter{
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+  }
+  

@@ -1,0 +1,38 @@
+.mySlides{
+    display: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    bottom: 3%;
+    width: 100%;
+    
+}
+.clickhere{
+background-color: teal;
+padding: 10px;
+color: white;
+border:1px solid teal;
+border-radius: 10px;
+position: absolute;
+bottom: 60px;
+right: 110px;
+cursor: pointer;
+
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        display:none;
+        flex-direction: row;
+        position: relative;
+        justify-content: center;
+    }
+  }

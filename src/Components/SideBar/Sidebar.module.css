@@ -1,0 +1,30 @@
+.container{
+    position: fixed;
+    left: 0;
+    top:12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    width: 2%;
+    height: 100%;
+    display: none;
+    z-index: 12;
+}
+.sidemenu{
+    display: flex;
+    justify-content: center;
+    -webkit-transform: rotate(270deg);
+    margin-top: 95px;
+    width: 120px;
+    font-weight:600 ;
+    margin-left: -42px;
+    border-radius: 5px;
+    padding-top: 2px;
+    cursor: pointer;
+}
+
+.sidemenu:hover{
+    margin-left: -43px;
+}
+
+

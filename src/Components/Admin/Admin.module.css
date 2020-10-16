@@ -1,0 +1,20 @@
+.header{
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.sidebar{
+    height: 100vh;
+    margin: 0;
+}
+.container{
+  min-height: 100vh;
+position: relative;
+display: block;
+flex-direction: row;
+position: fixed;
+}

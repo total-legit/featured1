@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height:100%
+}
+
+.advert{
+    object-fit: cover;
+    width: 80%;
+    height: 300px;
+	
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container{
+        display:flex;
+        width:100%;
+        padding:0%;
+        margin:0%;
+        align-items: center;
+        justify-content: center;
+    }
+    .advert{
+       width:100%;
+       height:100%     
+    }
+}
+    @media only screen 
+    and (min-device-width : 600px) 
+    and (max-device-width : 1367px){
+        .container{
+            display:flex;
+            width:100%;
+            padding:0%;
+            margin:2%;
+            align-items: center;
+            justify-content: center;
+            height:80%
+        }
+        .advert{
+           width:98%;
+           height:100%;     
+        }
+}

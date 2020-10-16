@@ -1,0 +1,221 @@
+.container{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    height: 95px;
+    flex-direction: column;
+   box-shadow: 2px 2px 13px gainsboro; 
+ }
+
+.userBtn:hover .subMenu{
+    display: block;
+}
+.userDropdown ul{
+    
+        list-style: none;
+        padding-left: 0;    
+        margin-top: 0;
+        margin-bottom: 0;
+    
+    
+}
+.userDropdown{
+    position: absolute;
+    width: 150px;
+    top:37px;
+    left: 0;
+}
+.subMenu{
+    font-weight: 300;
+    text-transform: none;
+    background-color: white;
+    border: 1px solid gainsboro;
+    display: none;
+
+}
+.subMenuItem{
+    padding: 10px 0px;
+    cursor: pointer;
+}
+.userDropdown:hover .subMenu{
+    display: block;
+}
+.listt{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+ul.listt li{
+    margin-right: 75px;
+
+}
+.category{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgba(4, 43, 57,1);
+    font-size: 14px;
+    margin-top: 61px;
+    font-weight: 500;
+  }
+.imgDiv{
+    margin-top:60px;
+    margin-left:5%;
+    display: none;
+}
+.imageBottle{
+    width: 70px;
+    height: 100px;
+}
+.btn{
+    background-color:  rgba(4, 43, 57,0.8);
+    border: none;
+    border-radius: 12px;
+    width: 100px;
+    height: 37px;
+    color: white;
+    margin-left: -5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.logoname{
+    margin-left: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+.logo{
+    width: 300px;
+    height:130px;
+    margin-left:10px;
+}
+
+.search{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 4px 2px 13px gainsboro;
+    border-radius: 13px;
+}
+.login{
+    margin-left: 11%;
+    background-color: white;
+    border:0px solid gainsboro;
+    width: 90px;
+    height: 37px;
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.login2{
+    margin-left: 11%;
+    background-color: white;
+    border:0px solid gainsboro;
+    width: 90px;
+    height: 37px;
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.login2:hover{
+    color: tomato;
+}
+.cartText{
+    font-size: 15px;
+    margin-right: 12px;
+}
+.login:hover{
+    color: rgba(4, 43, 57,1);
+    z-index:90;
+}
+.cart:hover{
+    color: rgba(4, 43, 57,1);
+    z-index:90;
+
+}
+.cart{
+    margin-left: 18%;
+    background-color: white;
+    border:0px solid gainsboro;
+    width: 180px;
+    height: 37px;
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.userBtn{
+    margin-left: 18%;
+    background-color: white;
+    border:0px solid gainsboro;
+    width: 150px;
+    height: 37px;
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    
+   }
+.input{
+    width: 600px;
+    height:30px;
+    /* box-shadow: 4px 4px 18px gainsboro; */
+    border: none;
+    border-radius: 5px;
+    flex-grow: 2;
+   margin-left: 12px;
+   margin-top: 3px;
+}
+.input:focus{
+    outline: none;
+}
+.tophead{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+   position: fixed;
+   z-index: 1200;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  @media only screen and (max-width: 100%) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+  }
+
